@@ -8,7 +8,8 @@ const Hero = () => {
     <S.Wrapper>
       <S.Hello>
         <h1 className="title">
-          Crafting projects specific solutions with expertise.
+          <span style={S.gradient}>Crafting projects</span> specific solutions
+          with expertise.
         </h1>
 
         <p className="description">
@@ -17,10 +18,10 @@ const Hero = () => {
         </p>
 
         <S.Actions>
-          <Button style={S.Btn} type="primary">
+          <Button style={S.btn} type="primary">
             Explore Now
           </Button>
-          <Button style={S.Btn}>Contact Us</Button>
+          <Button style={S.btn}>Contact Us</Button>
         </S.Actions>
       </S.Hello>
 

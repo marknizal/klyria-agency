@@ -1,8 +1,37 @@
 import styled from "@emotion/styled";
-
 import { css } from "@emotion/react";
+
 import { Container } from "../../components/shared";
 import { breakpoint } from "../../styles";
+
+/* ---------- Reusable Styles ---------- */
+
+const responsiveText = css`
+  .title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+`;
+
+export const gradient = {
+  background: "linear-gradient(-90deg, #ffffff, #b3d8ff, #3b82f6, #7aa7d9)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  backgroundClip: "text",
+  color: "transparent",
+};
+
+export const btn = {
+  borderRadius: "2rem",
+  padding: "1.25rem 1.5rem",
+};
+
+/* ---------- Components ---------- */
 
 export const Wrapper = styled(Container)`
   min-height: 100dvh;
@@ -21,18 +50,6 @@ export const Wrapper = styled(Container)`
     display: flex;
     flex-direction: column;
     gap: 3rem;
-  }
-`;
-
-const responsiveText = css`
-  .title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .description {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 `;
 
@@ -70,8 +87,6 @@ export const Actions = styled.div`
   display: flex;
   gap: 0.8rem;
 `;
-
-export const Btn = { borderRadius: "2rem", padding: "1.25rem 1.5rem" };
 
 export const Image = styled.img`
   width: 100%;

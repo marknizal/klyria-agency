@@ -4,7 +4,7 @@ import Hero from "../sections/hero";
 const Homepage = () => {
   return (
     <Main>
-      <Section $bg="#000435">
+      <Section $bg="linear-gradient(-20deg, #537895 0%, #000435 100%);">
         <Hero />
       </Section>
     </Main>
