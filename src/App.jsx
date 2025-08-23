@@ -1,5 +1,7 @@
+import Homepage from "./pages/home-page";
+
 function App() {
-  return <h1>Welcome to Klyria Agency</h1>;
+  return <Homepage />;
 }
 
 export default App;
