@@ -25,7 +25,7 @@ const Hero = () => {
         </S.Actions>
       </S.Hello>
 
-      <S.Image src={HeroImage} loading="lazy" />
+      <S.Image src={HeroImage} alt="Hero" loading="lazy" />
     </S.Wrapper>
   );
 };
