@@ -5,6 +5,7 @@ import Services from "../sections/services";
 import About from "../sections/about";
 import Feature from "../sections/feature";
 import Projects from "../sections/projects";
+import Cta from "../sections/cta";
 
 const Homepage = () => {
   return (
@@ -23,6 +24,9 @@ const Homepage = () => {
       </Section>
       <Section $bg="linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
         <Projects />
+      </Section>
+      <Section $bg="#000435">
+        <Cta />
       </Section>
     </Main>
   );
