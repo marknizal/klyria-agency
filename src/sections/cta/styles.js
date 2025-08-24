@@ -25,6 +25,10 @@ export const Wrapper = styled(Container)`
     max-width: 60%;
   }
 
+  ${breakpoint.tablet} {
+    padding: 4rem 2rem 0;
+  }
+
   ${breakpoint.mobile} {
     flex-direction: column;
 

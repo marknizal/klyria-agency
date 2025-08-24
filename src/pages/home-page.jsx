@@ -6,6 +6,7 @@ import About from "../sections/about";
 import Feature from "../sections/feature";
 import Projects from "../sections/projects";
 import Cta from "../sections/cta";
+import Footer from "../components/common/footer";
 
 const Homepage = () => {
   return (
@@ -28,6 +29,7 @@ const Homepage = () => {
       <Section $bg="#000435">
         <Cta />
       </Section>
+      <Footer />
     </Main>
   );
 };
