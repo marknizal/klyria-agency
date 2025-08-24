@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  font-size: ${(props) => props.$size || "0.875rem"};
-  text-align: ${(props) => props.$align || "justify"};
-  line-height: 1.25rem;
+  font-size: ${(props) => props.$size || "1rem"};
+  text-align: ${(props) => props.$align || "left"};
+  line-height: 1.5rem;
 `;

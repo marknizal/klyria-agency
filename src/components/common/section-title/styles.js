@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { color } from "../../../styles";
+import { color, breakpoint } from "../../../styles";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -16,6 +16,8 @@ export const Title = styled.h2`
 
 export const SubTitle = styled.h1`
   font-size: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
+
+  ${breakpoint.desktop} {
+    max-width: 700px;
+  }
 `;

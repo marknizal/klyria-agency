@@ -3,6 +3,7 @@ import { Main, Section } from "../components/shared";
 import Hero from "../sections/hero";
 import Services from "../sections/services";
 import About from "../sections/about";
+import Feature from "../sections/feature";
 
 const Homepage = () => {
   return (
@@ -15,6 +16,9 @@ const Homepage = () => {
       </Section>
       <Section $bg="linear-gradient(-225deg, #D7FFFE 0%, #FFFEFF 100%);">
         <About />
+      </Section>
+      <Section>
+        <Feature />
       </Section>
     </Main>
   );
