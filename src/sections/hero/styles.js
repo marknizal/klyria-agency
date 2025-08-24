@@ -49,14 +49,14 @@ export const Wrapper = styled(Container)`
   ${breakpoint.mobile} {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
 `;
 
 export const Hello = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 
   ${breakpoint.desktop} {
     gap: 2rem;
