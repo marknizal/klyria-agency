@@ -1,6 +1,6 @@
 import { Main, Section } from "../components/shared";
 
-import Navbar from "../components/common/navbar/navbar";
+import Navbar from "../components/common/navbar";
 import Hero from "../sections/hero";
 import Services from "../sections/services";
 import About from "../sections/about";
