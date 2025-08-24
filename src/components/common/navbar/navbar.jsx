@@ -1,94 +1,78 @@
-import styled from "@emotion/styled";
-import { color, breakpoint } from "../../../styles";
-
-import Button from "../button";
-import { Container } from "../../shared";
 import { TbMenu } from "react-icons/tb";
+import { useState, useEffect } from "react";
 
-const Header = styled.header`
-  width: 100%;
-  height: 3.5rem;
-  position: fixed;
-  display: flex;
-  background-color: ${color.white};
-  z-index: 1000;
-  box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 8px 0px;
-`;
+import * as S from "./styles";
+import Button from "../button";
 
-const Wrapper = styled(Container)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  ${breakpoint.tablet} {
-    padding: 0 2rem;
-  }
-
-  .navigation {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    display: none;
-
-    ${breakpoint.desktop} {
-      display: flex;
-    }
-  }
-
-  .menu {
-    display: flex;
-    font-size: 1.65rem;
-
-    ${breakpoint.desktop} {
-      display: none;
-    }
-  }
-`;
-
-const Nav = styled.nav`
-  display: flex;
-  gap: 1.5rem;
-
-  a {
-    text-decoration: none;
-    font-weight: 400;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      color: ${color.link};
-    }
-  }
-`;
-
-const btn = {
-  fontSize: "0.8rem",
-  padding: "1rem 1.15rem",
-  borderRadius: "2rem",
-};
+const navItems = [
+  { id: 1, path: "#home", label: "Home" },
+  { id: 2, path: "#about", label: "About" },
+  { id: 3, path: "#projects", label: "Projects" },
+  { id: 4, path: "#blog", label: "Blog" },
+  { id: 5, path: "#contact", label: "Contact" },
+];
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      const threshold = 50;
+
+      setShowHeader(currentScroll < lastScrollY || currentScroll < threshold);
+      setScrolled(currentScroll > threshold);
+      setLastScrollY(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <Header>
-      <Wrapper>
-        <h2>Klyria</h2>
+    <>
+      <S.Header $show={showHeader} $scrolled={scrolled}>
+        <S.Desktop>
+          <S.Logo $scrolled={scrolled}>Klyria</S.Logo>
 
-        <div className="navigation">
-          <Nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-          </Nav>
+          <S.NavLinks $scrolled={scrolled}>
+            {navItems.map(({ id, path, label }) => (
+              <a key={id} href={path}>
+                {label}
+              </a>
+            ))}
+            <Button type="primary" style={S.button}>
+              Free Trial
+            </Button>
+          </S.NavLinks>
 
-          <Button type="primary" style={btn}>
+          <S.MenuIcon $scrolled={scrolled} onClick={() => setIsOpen(true)}>
+            <TbMenu />
+          </S.MenuIcon>
+        </S.Desktop>
+      </S.Header>
+
+      <S.Sidebar $isOpen={isOpen}>
+        <S.MobileNav>
+          <S.Logo style={S.mobileLogo}>Klyria</S.Logo>
+
+          {navItems.map(({ id, path, label }) => (
+            <a key={id} href={path} onClick={() => setIsOpen(false)}>
+              {label}
+            </a>
+          ))}
+
+          <Button type="primary" style={{ ...S.button, ...S.button.bottom }}>
             Free Trial
           </Button>
-        </div>
+        </S.MobileNav>
+      </S.Sidebar>
 
-        <TbMenu className="menu" />
-      </Wrapper>
-    </Header>
+      <S.Overlay $isOpen={isOpen} onClick={() => setIsOpen(false)} />
+    </>
   );
 };
 
