@@ -14,13 +14,13 @@ const Feature = lazy(() => import("../sections/feature"));
 const Projects = lazy(() => import("../sections/projects"));
 const Cta = lazy(() => import("../sections/cta"));
 
-const Homepage = () => {
+const Home = () => {
   return (
     <Main>
       <Suspense fallback={<Loader />}>
         <Navbar />
 
-        <Section $bg={gradientBg.hero}>
+        <Section id="home" $bg={gradientBg.hero}>
           <Hero />
         </Section>
 
@@ -28,7 +28,7 @@ const Homepage = () => {
           <Services />
         </Section>
 
-        <Section $bg={gradientBg.about}>
+        <Section id="about" $bg={gradientBg.about}>
           <About />
         </Section>
 
@@ -36,11 +36,11 @@ const Homepage = () => {
           <Feature />
         </Section>
 
-        <Section $bg={gradientBg.projects}>
+        <Section id="projects" $bg={gradientBg.projects}>
           <Projects />
         </Section>
 
-        <Section $bg={color.primary}>
+        <Section id="contact" $bg={color.primary}>
           <Cta />
         </Section>
 
@@ -50,4 +50,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Home;

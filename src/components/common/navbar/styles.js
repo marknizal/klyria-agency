@@ -31,6 +31,7 @@ export const Desktop = styled(Container)`
 `;
 
 export const Logo = styled.h2`
+  cursor: pointer;
   color: ${({ $scrolled }) => ($scrolled ? color.black : color.white)};
 `;
 
