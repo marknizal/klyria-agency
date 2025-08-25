@@ -1,4 +1,4 @@
-import{s as D,h as H,r as _,E as W,c as J,a as R,b as X,d as P,e as T,C as B,I as L,j as p,B as A}from"./index-Dl_gSl7c.js";var O={exports:{}},r={};/** @license React v16.13.1
+import{s as D,h as H,r as _,E as W,c as J,a as R,b as X,d as P,e as T,C as B,I as L,j as p,B as A}from"./index-9k9YoMdv.js";var O={exports:{}},r={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -66,4 +66,4 @@ import{s as D,h as H,r as _,E as W,c as J,a as R,b as X,d as P,e as T,C as B,I a
   gap: 0.8rem;
 `,ee=T(L)`
   border-radius: 1rem 5rem 2rem;
-`,re="/assets/hero-CQAMR_Uc.jpg",ne=()=>p.jsxs(G,{children:[p.jsxs(Z,{children:[p.jsxs("h1",{className:"title",children:[p.jsx("span",{style:Y,children:"Crafting projects"})," specific solutions with expertise."]}),p.jsx("p",{className:"description",children:"We're a creative company that focuses on establishing long-term relationships with customers."}),p.jsxs(k,{children:[p.jsx(A,{style:F,type:"primary",children:"Explore Now"}),p.jsx(A,{style:F,children:"Contact Us"})]})]}),p.jsx(ee,{src:re,alt:"Hero",loading:"lazy"})]});export{ne as default};
+`,re="/klyria-agency/assets/hero-CQAMR_Uc.jpg",ne=()=>p.jsxs(G,{children:[p.jsxs(Z,{children:[p.jsxs("h1",{className:"title",children:[p.jsx("span",{style:Y,children:"Crafting projects"})," specific solutions with expertise."]}),p.jsx("p",{className:"description",children:"We're a creative company that focuses on establishing long-term relationships with customers."}),p.jsxs(k,{children:[p.jsx(A,{style:F,type:"primary",children:"Explore Now"}),p.jsx(A,{style:F,children:"Contact Us"})]})]}),p.jsx(ee,{src:re,alt:"Hero",loading:"lazy"})]});export{ne as default};
