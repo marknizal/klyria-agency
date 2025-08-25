@@ -2,13 +2,14 @@ import Thumbnail from "../../assets/about-banner.png";
 import SectionTitle from "../../components/common/section-title";
 
 import * as S from "./styles";
+import { Image, Box } from "../../components/shared";
 import { aboutItems } from "./data";
 
 const About = () => (
   <S.Wrapper>
-    <S.Image src={Thumbnail} alt="about-banner" loading="lazy" />
+    <Image src={Thumbnail} alt="about-banner" $ratio="4 / 3" $fit="contain" />
 
-    <S.Box>
+    <Box>
       <SectionTitle
         title="Why choose us?"
         subTitle="We bring solutions to make life easier for our clients."
@@ -24,7 +25,7 @@ const About = () => (
           key: item.key,
         }))}
       />
-    </S.Box>
+    </Box>
   </S.Wrapper>
 );
 

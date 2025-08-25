@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-import { Container } from "../../components/shared";
+import { Container, Box as B, Image } from "../../components/shared";
 import { color, radius } from "../../styles";
 
 export const Wrapper = styled(Container)`
@@ -26,20 +26,14 @@ export const Card = styled.div`
   }
 `;
 
-export const Thumbnail = styled.img`
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  pointer-events: none;
+export const Thumbnail = styled(Image)`
   transition: all 0.25s ease-in-out;
 `;
 
-export const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.5rem;
+export const Box = styled(B)`
   flex: 1;
+  padding: 1.5rem;
+  gap: 0.5rem;
 `;
 
 export const title = {

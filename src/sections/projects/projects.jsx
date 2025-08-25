@@ -21,7 +21,7 @@ const Projects = () => (
           <S.Thumbnail
             alt={project.title}
             src={project.thumbnail}
-            loading="lazy"
+            $ratio="4 / 3"
           />
 
           <S.Box>

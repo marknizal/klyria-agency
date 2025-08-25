@@ -27,7 +27,7 @@ export const Container = styled(C)`
   }
 `;
 
-export const Box = styled.section`
+export const Section = styled.section`
   display: flex;
   flex-direction: column;
   gap: 0.75rem;

@@ -1,7 +1,7 @@
 import { LuCheck } from "react-icons/lu";
 import { features } from "./data";
 
-import { Paragraph } from "../../components/shared";
+import { Image, Box, Paragraph } from "../../components/shared";
 import SectionTitle from "../../components/common/section-title";
 import Thumbnail from "../../assets/feature-banner.png";
 
@@ -9,7 +9,7 @@ import * as S from "./styles";
 
 const Feature = () => (
   <S.Wrapper>
-    <S.Box>
+    <Box $gap="1.5rem">
       <SectionTitle
         title="Our Solutions"
         subTitle="We make your spending stress-free for you to have the perfect control."
@@ -29,9 +29,9 @@ const Feature = () => (
           </S.Item>
         ))}
       </S.List>
-    </S.Box>
+    </Box>
 
-    <S.Image src={Thumbnail} alt="feature-banner" loading="lazy" />
+    <Image src={Thumbnail} alt="feature-banner" $ratio="4 / 3" $fit="contain" />
   </S.Wrapper>
 );
 

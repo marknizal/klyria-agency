@@ -24,20 +24,6 @@ export const Wrapper = styled(Container)`
   }
 `;
 
-export const Image = styled.img`
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  pointer-events: none;
-`;
-
-export const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-`;
-
 export const Collapse = styled(AntdCollapse)`
   .ant-collapse-content-box {
     padding: 0 1.5rem !important;

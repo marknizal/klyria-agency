@@ -23,20 +23,6 @@ export const Wrapper = styled(Container)`
   }
 `;
 
-export const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-`;
-
-export const Image = styled.img`
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  pointer-events: none;
-`;
-
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;

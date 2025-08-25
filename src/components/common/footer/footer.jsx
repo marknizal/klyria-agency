@@ -6,12 +6,12 @@ import * as S from "./styles";
 const Footer = () => (
   <S.Wrapper role="contentinfo">
     <S.Container>
-      <S.Box aria-label="Company Information">
+      <S.Section aria-label="Company Information">
         <h2>Klyria Agency</h2>
         <small>&copy; 2025 Mark John Allen Nizal. All rights reserved.</small>
-      </S.Box>
+      </S.Section>
 
-      <S.Box aria-label="Contact Information">
+      <S.Section aria-label="Contact Information">
         <h3>Get in touch</h3>
 
         <S.Address style={{ fontStyle: "normal" }}>
@@ -19,9 +19,9 @@ const Footer = () => (
           <S.Link href="mailto:info@email.com">info@email.com</S.Link>
           <S.Link href="tel:+441234567890">00 (123) 456 78 90</S.Link>
         </S.Address>
-      </S.Box>
+      </S.Section>
 
-      <S.Box aria-label="Learn More">
+      <S.Section aria-label="Learn More">
         <h3>Learn More</h3>
         <S.List>
           {links.map((link) => (
@@ -30,9 +30,9 @@ const Footer = () => (
             </li>
           ))}
         </S.List>
-      </S.Box>
+      </S.Section>
 
-      <S.Box aria-label="Newsletter Signup">
+      <S.Section aria-label="Newsletter Signup">
         <h3>Our Newsletter</h3>
         <small>
           Subscribe to our newsletter to get our news & deals delivered to you.
@@ -50,7 +50,7 @@ const Footer = () => (
             Join
           </Button>
         </form>
-      </S.Box>
+      </S.Section>
     </S.Container>
   </S.Wrapper>
 );

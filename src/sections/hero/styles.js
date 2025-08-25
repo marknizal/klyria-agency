@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 
-import { Container } from "../../components/shared";
+import { Container, Image as Img } from "../../components/shared";
 import { color, breakpoint, radius } from "../../styles";
 
 /* ---------- Reusable Styles ---------- */
@@ -88,9 +88,6 @@ export const Actions = styled.div`
   gap: 0.8rem;
 `;
 
-export const Image = styled.img`
-  width: 100%;
-  aspect-ratio: 1 / 1;
+export const Image = styled(Img)`
   border-radius: 1rem 5rem 2rem;
-  object-fit: cover;
 `;
