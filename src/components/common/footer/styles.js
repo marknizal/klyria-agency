@@ -6,8 +6,8 @@ import { color, breakpoint } from "../../../styles";
 export const form = { display: "flex", gap: "0.65rem", marginTop: "1rem" };
 
 export const Wrapper = styled.footer`
-  background-color: #000435;
-  color: #fff;
+  background-color: ${color.primary};
+  color: ${color.white};
 `;
 
 export const Container = styled(C)`
@@ -42,7 +42,6 @@ export const Address = styled.address`
 export const Link = styled.a`
   font-size: 0.9rem;
   line-height: 1.4rem;
-  color: inherit;
   text-decoration: none;
   transition: color 0.3s ease;
 

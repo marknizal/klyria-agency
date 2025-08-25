@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-import { breakpoint } from "../../styles";
+import { color, breakpoint, radius } from "../../styles";
 import { Container } from "../../components/shared";
 
 export const Wrapper = styled(Container)`
@@ -20,7 +20,7 @@ export const Card = styled.article`
   gap: 1rem;
   box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 8px;
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: ${radius.base};
   height: 100%;
 
   ${breakpoint.mobile} {
@@ -31,9 +31,9 @@ export const Card = styled.article`
 export const IconWrapper = styled.div`
   font-size: 2rem;
   padding: 0.65rem;
-  border-radius: 1.15rem;
+  border-radius: calc(${radius.base} + 0.15rem);
   background-color: ${({ $bg }) => $bg};
-  color: white;
+  color: ${color.white};
 `;
 
 export const btn = {

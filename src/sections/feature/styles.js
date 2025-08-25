@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 import { Container } from "../../components/shared";
-import { breakpoint } from "../../styles";
+import { breakpoint, color, radius } from "../../styles";
 
 export const Wrapper = styled(Container)`
   display: grid;
@@ -58,7 +58,7 @@ export const icon = {
   fontSize: "1.35rem",
   flexShrink: 0,
   backgroundColor: "yellowgreen",
-  color: "white",
-  borderRadius: "50%",
+  color: color.white,
+  borderRadius: radius.full,
   padding: "0.25rem",
 };

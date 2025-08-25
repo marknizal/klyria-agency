@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
+
 import { Container } from "../../components/shared";
+import { color, radius } from "../../styles";
 
 export const Wrapper = styled(Container)`
   min-height: 100dvh;
@@ -14,8 +16,8 @@ export const Wrapper = styled(Container)`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-radius: 1rem;
+  background-color: ${color.white};
+  border-radius: ${radius.base};
   overflow: hidden;
   height: 100%;
 
@@ -51,7 +53,7 @@ export const title = {
 export const description = {
   lineHeight: "1.25rem",
   marginBottom: "1.5rem",
-  color: "gray",
+  color: color.grey30,
 };
 
 export const small = {

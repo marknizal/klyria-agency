@@ -1,3 +1,4 @@
+import { color, gradientBg } from "../styles";
 import { Main, Section } from "../components/shared";
 
 import Navbar from "../components/common/navbar";
@@ -13,22 +14,22 @@ const Homepage = () => {
   return (
     <Main>
       <Navbar />
-      <Section $bg="linear-gradient(-20deg, #537895 0%, #000435 100%);">
+      <Section $bg={gradientBg.hero}>
         <Hero />
       </Section>
       <Section>
         <Services />
       </Section>
-      <Section $bg="linear-gradient(-225deg, #D7FFFE 0%, #FFFEFF 100%);">
+      <Section $bg={gradientBg.about}>
         <About />
       </Section>
       <Section>
         <Feature />
       </Section>
-      <Section $bg="linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
+      <Section $bg={gradientBg.projects}>
         <Projects />
       </Section>
-      <Section $bg="#000435">
+      <Section $bg={color.primary}>
         <Cta />
       </Section>
       <Footer />

@@ -13,7 +13,7 @@ export const radius = {
 };
 
 export const color = {
-  primary: "#003366",
+  primary: "#000435",
   white: "#FFFFFF",
   black: "#000000",
   transparent: "rgba(0,0,0,0)",
@@ -25,4 +25,10 @@ export const color = {
   grey30: "#999999",
 
   link: "#2A9DF4",
+};
+
+export const gradientBg = {
+  hero: "linear-gradient(-20deg, #537895 0%, #000435 100%)",
+  about: "linear-gradient(-225deg, #D7FFFE 0%, #FFFEFF 100%)",
+  projects: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)",
 };

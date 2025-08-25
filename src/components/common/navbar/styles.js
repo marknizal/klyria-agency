@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-import { color, breakpoint } from "../../../styles";
+import { color, breakpoint, radius } from "../../../styles";
 import { Container } from "../../shared";
 
 export const Header = styled.header`
@@ -93,7 +93,7 @@ export const MobileNav = styled.nav`
     border-bottom: 1px solid #eee;
     text-decoration: none;
     font-size: 1rem;
-    color: ${color.text};
+    color: ${color.black};
     transition: color 0.2s ease-in-out;
 
     &:hover {
@@ -117,4 +117,7 @@ export const Overlay = styled.div`
   z-index: 1000;
 `;
 
-export const button = { borderRadius: "2rem", bottom: { marginTop: "auto" } };
+export const button = {
+  borderRadius: radius.lg,
+  bottom: { marginTop: "auto" },
+};

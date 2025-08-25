@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 
 import { Container } from "../../components/shared";
-import { breakpoint } from "../../styles";
+import { color, breakpoint, radius } from "../../styles";
 
 /* ---------- Reusable Styles ---------- */
 
@@ -21,13 +21,13 @@ const responsiveText = css`
 export const gradient = {
   background: "linear-gradient(-90deg, #ffffff, #b3d8ff, #3b82f6, #7aa7d9)",
   WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
+  WebkitTextFillColor: color.transparent,
   backgroundClip: "text",
-  color: "transparent",
+  color: color.transparent,
 };
 
 export const btn = {
-  borderRadius: "2rem",
+  borderRadius: radius.lg,
   padding: "1.25rem 1.5rem",
 };
 
@@ -65,13 +65,13 @@ export const Hello = styled.div`
   .title {
     font-size: 4rem;
     line-height: 4.5rem;
-    color: white;
+    color: ${color.white};
   }
 
   .description {
     font-size: 1.25rem;
     line-height: 2rem;
-    color: white;
+    color: ${color.white};
   }
 
   ${breakpoint.tablet} {
