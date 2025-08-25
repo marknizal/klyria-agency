@@ -6,7 +6,7 @@ import Home from "../pages/home";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/klyria-agency/" element={<Home />} />
       <Route path="*" element={<Result status="404" />} />
     </Routes>
   );

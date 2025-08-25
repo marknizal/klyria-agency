@@ -24,7 +24,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    navigate("/");
+    navigate("/klyria-agency/");
     window.scrollTo(0, 0);
     setIsOpen(false);
   };
