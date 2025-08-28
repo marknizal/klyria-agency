@@ -1,4 +1,4 @@
-import{a as t,b as a,d as r,e as i,C as n,j as e,B as s}from"./index-De2A7KPy.js";const o={background:"linear-gradient(90deg, #ffffff, #b3d8ff, #3b82f6, #7aa7d9)",WebkitBackgroundClip:"text",WebkitTextFillColor:t.transparent,backgroundClip:"text",color:t.transparent},d={borderRadius:a.lg,padding:"1.5rem"},l=i(n)`
+import{a as t,b as a,d as r,e as i,C as n,j as e,B as s}from"./index-BpRTLvIK.js";const o={background:"linear-gradient(90deg, #ffffff, #b3d8ff, #3b82f6, #7aa7d9)",WebkitBackgroundClip:"text",WebkitTextFillColor:t.transparent,backgroundClip:"text",color:t.transparent},d={borderRadius:a.lg,padding:"1.5rem"},l=i(n)`
   display: flex;
   justify-content: space-between;
   gap: 2rem;

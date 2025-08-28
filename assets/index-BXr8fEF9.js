@@ -1,4 +1,4 @@
-import{b as a,a as n,d as i,e as t,C as r,j as e,M as l,P as o,I as d}from"./index-De2A7KPy.js";import{e as c}from"./index-B-qraOfq.js";import{S as m}from"./section-title-d6NPxcgo.js";const p=[{id:"f1",text:"Seamless expense tracking in real-time"},{id:"f2",text:"Smart budgeting with personalized insights"},{id:"f3",text:"Secure multi-device synchronization"},{id:"f4",text:"Detailed analytics and spending reports"}],f="/klyria-agency/assets/feature-banner-CD75v9oT.png",g=t(r)`
+import{b as a,a as n,d as i,e as t,C as r,j as e,M as l,P as o,I as d}from"./index-BpRTLvIK.js";import{e as c}from"./index-OFAYRjto.js";import{S as m}from"./section-title-DAQVPGh4.js";const p=[{id:"f1",text:"Seamless expense tracking in real-time"},{id:"f2",text:"Smart budgeting with personalized insights"},{id:"f3",text:"Secure multi-device synchronization"},{id:"f4",text:"Detailed analytics and spending reports"}],f="/klyria-agency/assets/feature-banner-CD75v9oT.png",g=t(r)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
