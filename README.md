@@ -5,9 +5,16 @@ It is optimized for performance, SEO, and works seamlessly across all devices.
 
 ---
 
+## 🚀 Live Demo
+[View Live Demo](https://marknizal.github.io/klyria-agency/)
+
+---
+
 ## 🛠️ Tech Stack
 - **React** (Frontend library)  
-- **Vite** (Fast development & build tool)  
+- **Vite** (Fast development & build tool)
+- **Emotion CSS** (CSS-in-JS styling)
+- **Ant Design (AntD)** (UI components library)
 
 ---
 
@@ -23,10 +30,10 @@ Clone the project:
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/klyria.git
+git clone https://github.com/marknizal/klyria-agency.git
 
 # Navigate to project folder
-cd klyria
+cd klyria-agency
 
 # Install dependencies
 npm install
